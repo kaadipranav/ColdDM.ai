@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "crons": [
+    { "path": "/api/inngest", "schedule": "*/5 * * * *" }
+  ],
+  "functions": {
+    "colddm/app/(public)/t/[trackId]/route.ts": { "maxDuration": 10 },
+    "colddm/app/(public)/o/[openId].png/route.ts": { "maxDuration": 10 },
+    "colddm/app/api/inngest/route.ts": { "maxDuration": 30 }
+  }
+}
+
